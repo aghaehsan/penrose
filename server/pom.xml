@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>ar.com.gorosite.penrose</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>server</artifactId>
+
+	<dependencies>
+		<dependency>
+			<artifactId>common</artifactId>
+			<groupId>${project.groupId}</groupId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<artifactId>core</artifactId>
+			<groupId>${project.groupId}</groupId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<artifactId>ldap-backend</artifactId>
+			<groupId>${project.groupId}</groupId>
+			<version>${project.version}</version>
+		</dependency>
+ 		<!-- https://mvnrepository.com/artifact/org.jboss.jbossas/jboss-as-system -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.jboss.jbossas</groupId> -->
+<!-- 			<artifactId>jboss-as-system</artifactId> -->
+<!-- 			<version>5.1.0.GA</version> -->
+<!-- 		</dependency> -->
+
+
+
+		<!-- TEST -->
+
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
+
+	</dependencies>
+
+</project>
