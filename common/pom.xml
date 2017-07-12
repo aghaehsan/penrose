@@ -26,7 +26,7 @@
 		<dependency>
 			<groupId>dom4j</groupId>
 			<artifactId>dom4j</artifactId>
-			<version>1.6.1.redhat-7</version>
+			<version>1.6.1</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.novell.ldap/jldap -->
 		<dependency>
