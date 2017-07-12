@@ -17,14 +17,15 @@
  */
 package org.safehaus.penrose.jboss;
 
-import org.jboss.system.Service;
+//import org.jboss.system.Service;
 
 import java.util.Collection;
 
 /**
  * @author Endi S. Dewata
  */
-public interface PenroseServiceMBean extends Service {
+//public interface PenroseServiceMBean extends Service {
+public interface PenroseServiceMBean {
 
     public String getProductName() throws Exception;
     public String getProductVersion() throws Exception;
