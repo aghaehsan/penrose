@@ -1,27 +1,28 @@
 package org.safehaus.penrose.mina;
 
-import org.safehaus.penrose.Penrose;
-import org.safehaus.penrose.backend.PenroseBackend;
-import org.safehaus.penrose.server.PenroseServer;
-import org.safehaus.penrose.naming.PenroseContext;
-import org.safehaus.penrose.schema.SchemaManager;
-import org.safehaus.penrose.schema.AttributeType;
-import org.safehaus.penrose.schema.attributeSyntax.AttributeSyntax;
-import org.safehaus.penrose.schema.attributeSyntax.AttributeSyntaxUtil;
-import org.safehaus.penrose.ldap.LDAPService;
-import org.safehaus.penrose.ldapbackend.mina.MinaHandler;
+import java.net.InetSocketAddress;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.Set;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.mina.common.ExecutorThreadModel;
 import org.apache.mina.transport.socket.nio.SocketAcceptor;
 import org.apache.mina.transport.socket.nio.SocketAcceptorConfig;
 import org.apache.mina.transport.socket.nio.SocketSessionConfig;
-import org.apache.mina.common.ExecutorThreadModel;
-
-import java.net.InetSocketAddress;
-import java.util.*;
-
-import edu.emory.mathcs.backport.java.util.concurrent.TimeUnit;
-import edu.emory.mathcs.backport.java.util.concurrent.LinkedBlockingQueue;
-import edu.emory.mathcs.backport.java.util.concurrent.ThreadPoolExecutor;
+import org.safehaus.penrose.Penrose;
+import org.safehaus.penrose.backend.PenroseBackend;
+import org.safehaus.penrose.ldap.LDAPService;
 import org.safehaus.penrose.ldapbackend.Backend;
+import org.safehaus.penrose.ldapbackend.mina.MinaHandler;
+import org.safehaus.penrose.naming.PenroseContext;
+import org.safehaus.penrose.schema.AttributeType;
+import org.safehaus.penrose.schema.SchemaManager;
+import org.safehaus.penrose.schema.attributeSyntax.AttributeSyntax;
+import org.safehaus.penrose.server.PenroseServer;
 
 /**
  * @author Endi S. Dewata
