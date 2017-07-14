@@ -24,12 +24,27 @@
 			<groupId>${project.groupId}</groupId>
 			<version>${project.version}</version>
 		</dependency>
- 		<!-- https://mvnrepository.com/artifact/org.jboss.jbossas/jboss-as-system -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.jboss.jbossas</groupId> -->
-<!-- 			<artifactId>jboss-as-system</artifactId> -->
-<!-- 			<version>5.1.0.GA</version> -->
-<!-- 		</dependency> -->
+
+		<!-- https://mvnrepository.com/artifact/org.apache.directory.shared/shared-asn1 -->
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-asn1</artifactId>
+			<version>0.9.5.5</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.directory.shared/shared-asn1-codec -->
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-asn1-codec</artifactId>
+			<version>0.9.5.5</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.jboss.jbossas/jboss-as-system -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.jboss.jbossas</groupId> -->
+		<!-- <artifactId>jboss-as-system</artifactId> -->
+		<!-- <version>5.1.0.GA</version> -->
+		<!-- </dependency> -->
 
 
 

@@ -6,6 +6,12 @@
 		<artifactId>parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+
+	<properties>
+		<sl4f.version>1.7.25</sl4f.version>
+	</properties>
+
+
 	<artifactId>common</artifactId>
 
 	<dependencies>
@@ -14,8 +20,16 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>1.7.25</version>
+			<version>${sl4f.version}</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${sl4f.version}</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/commons-digester/commons-digester -->
 		<dependency>
 			<groupId>commons-digester</groupId>
